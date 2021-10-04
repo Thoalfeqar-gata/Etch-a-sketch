@@ -1,0 +1,60 @@
+body
+{
+    height : 100vh;
+    background-color: rgb(177, 135, 255);
+    display : flex;
+    align-items : center;
+    justify-content : center;
+}
+
+#UI
+{
+    display : flex;
+    flex-direction : column;  
+}
+
+#UI button
+{
+   background-color :lightsalmon;
+   border : 1px solid transparent;
+   border-radius : 5px;
+   padding : 8px;
+   font-size : 18px;
+   font-weight : bold;
+   font-family: courier, "Courier New", monospace;
+   margin : 5px 0px;
+}
+
+#UI button:hover
+{
+    background-color : salmon;
+}
+
+#grid-size-display
+{
+    background-color : rgb(80, 0, 80);
+    font-size : 20px;
+    font-weight : bold;
+    color : white;
+    border-radius : 5px;
+    padding : 15px;
+    font-family: courier, "Courier New", monospace;
+
+    display : flex;
+    justify-content : center;
+    align-items : center;
+}
+
+#grid-container
+{
+    display : flex;
+    flex-direction : column;
+    background-color : black;
+    border : 4px solid rgb(243, 140, 55);
+    margin : 100px;
+}
+
+.grid-row
+{
+    display : flex;
+}
