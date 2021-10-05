@@ -1,6 +1,14 @@
 body
 {
-    height : 100vh;
+    margin : 0px;
+    background: rgb(177, 135, 255);
+    display : flex;
+    flex-direction: column;
+
+}
+#wrapper
+{
+    height : 90vh;
     background-color: rgb(177, 135, 255);
     display : flex;
     align-items : center;
@@ -23,6 +31,23 @@ body
    font-weight : bold;
    font-family: courier, "Courier New", monospace;
    margin : 5px 0px;
+}
+
+#color-picker
+{
+    opacity : 0;
+    width : 100%;
+    height : 100%;
+    border-radius : 50%;
+}
+
+#color-picker-wrapper
+{
+    width : 64px;
+    height : 64px;
+    border-radius : 50%;
+    align-self : center;
+    border : 5px solid rgb(0, 0, 0);
 }
 
 #UI button:hover
@@ -58,3 +83,17 @@ body
 {
     display : flex;
 }
+
+#copyright
+{
+    background-color : rgb(177, 135, 255);
+    font-size : 18px;
+    color : white;
+    font-weight : bold;
+    text-align : center;
+    font-family : courier, "C";
+}
+
+
+
+

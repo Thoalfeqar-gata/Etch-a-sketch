@@ -1,7 +1,7 @@
-let gridSize = 16;
+let gridSize = 12;
 let gridWidth = 480;
 let gridHeight = 480;
-let drawingColor = "rgb(125, 125, 125)"
+let drawingColor = "rgb(255, 0, 255)";
 let randomColorMode = false;
 let slowMode = false;
 
@@ -45,17 +45,21 @@ function setup(size)
     }
 }
 
-setup(64);
+
 
 //color picker logic
 let colorPicker = document.querySelector("#color-picker");
+let colorPickerWrapper = document.querySelector("#color-picker-wrapper");
 colorPicker.addEventListener("change", changeDrawingColor);
 
 function changeDrawingColor(event)
 {
     let color = event.target.value;
     drawingColor = switchToRgb(color);
+    colorPickerWrapper.style.backgroundColor = drawingColor;
 }
+
+colorPickerWrapper.style.backgroundColor = colorPicker.value;
 
 function switchToRgb(color)
 {
@@ -134,7 +138,7 @@ let slowBtn = document.querySelector("#slow-mode");
 clearBtn.onclick = () => {
     unHighLight(slowBtn);
     unHighLight(randomBtn);
-    
+    highLight(normalBtn);
     slowMode = false;
     randomColorMode = false;
 
@@ -256,6 +260,11 @@ function resetCanvas()
 
     randomColorMode = false;
     slowMode = false;
+    highLight(normalBtn);
     unHighLight(randomBtn);
     unHighLight(slowBtn);
 }
+
+
+setup(slider.value);
+highLight(normalBtn);

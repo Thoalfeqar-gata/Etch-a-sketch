@@ -8,22 +8,31 @@
     </head>
 
     <body>
-        <div id = "UI">
-            <input type = "color" id = "color-picker">
-            <button id = "clear-btn">Clear</button>
-            <button id = "normal-btn">Normal mode</button>
-            <button id = "random">Random mode</button>
-            <button id = "slow-mode">Slow black</button>
-
-            
-            <input type = "range" min = "1" max = "64" id = "slider">
-            <div id = "grid-size-display">
-                <p></p>
+        <div id = "wrapper">
+            <div id = "UI">
+                <div id = "color-picker-wrapper">
+                    <input type = "color" id = "color-picker" value = "#ff00ff">
+                </div>
+                <button id = "clear-btn">Clear</button>
+                <button id = "normal-btn">Normal mode</button>
+                <button id = "random">Random mode</button>
+                <button id = "slow-mode">Slow black</button>
+    
+                
+                <input type = "range" min = "1" max = "64" id = "slider" value = "12">
+                <div id = "grid-size-display">
+                    <p></p>
+                </div>
+            </div>
+    
+            <div id = "grid-container">
+    
             </div>
         </div>
+        
 
-        <div id = "grid-container">
-
+        <div id = "copyright">
+            <p>Copyright © Thoalfeqar gata </p>
         </div>
     </body>
 </html>
